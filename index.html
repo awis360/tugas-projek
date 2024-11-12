@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Peralatan Rumah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Toko Online Peralatan Rumah</h2>
+        <div id="product-list">
+            <div class="product">
+                <h3>Set Panci</h3>
+                <p>Harga: Rp. 150,000</p>
+                <button onclick="addToCart('Set Panci', 150000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <h3>Blender</h3>
+                <p>Harga: Rp. 300,000</p>
+                <button onclick="addToCart('Blender', 300000)">Tambah ke Keranjang</
+                    button>
+            </div>
+            <div class="product">
+                <h3>Kompor Gas</h3>
+                <p>Harga: Rp. 500,000</p>
+                <button onclick="addToCart('Kompor Gas', 500000)">Tambah ke Keranjang</button>
+            </div>
+        </div>
+        
+        <h3>Keranjang Belanja</h3>
+        <div id="cart">
+            <ul id="cart-items"></ul>
+            <p>Total: Rp. <span id="total-price">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
